@@ -1,6 +1,5 @@
-import './style.css'
+import "./style.css";
+import { gsap } from "gsap";
+const tl = gsap.timeline({ delay: 0.2 });
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+tl.from(".head", { opacity: 0, duration: 5 });
