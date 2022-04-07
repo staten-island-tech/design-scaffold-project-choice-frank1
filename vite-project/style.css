@@ -29,6 +29,7 @@ body,
   background-color: #333;
   overflow: hidden;
   font-size: 10rem;
+  position: fixed;
 }
 
 #Home-Header a {
@@ -44,11 +45,20 @@ body,
   background-color: #ddd;
   color: black;
 }
-.Destinations {
-  background-image: url(https://www.thediaryofanomad.com/wp-content/w3-webp/uploads/2020/11/rome-for-3-days-in-rome-itinerary-vatican-dome-view.jpgw3.webp);
-  height: 95vh;
+.Destinations-Head {
+  margin-bottom: 5rem;
 }
-
+.Destinations {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 5rem;
+  justify-content: space-around;
+  height: 200vh;
+}
+#small {
+  width: 5rem;
+  height: 5rem;
+}
 :root {
   --black: #000;
   --light-blue: #2998ff;
@@ -72,6 +82,7 @@ body,
 h1 {
   font-size: var(--h1);
 }
+
 h2 {
   font-size: var(--h2);
 }

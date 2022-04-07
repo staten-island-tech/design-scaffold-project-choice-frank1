@@ -4,16 +4,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Home = gsap.timeline({ delay: 0.1 });
 Home.from(".Home", { opacity: 0, duration: 0.6, ease: "ease-out" });
-Home.from("#home1", { opacity: 0, duration: 0.6, ease: "ease-out" });
-Home.from("#home2", { opacity: 0, duration: 0.6, ease: "ease-out" });
-Home.from("#home3", { opacity: 0, duration: 0.6, ease: "ease-out" });
+Home.from("#home1", { opacity: 0, rotation: 720, duration: 0.8 });
+Home.from("#home2", { opacity: 0, rotation: 720, duration: 0.8 });
+Home.from("#home3", { opacity: 0, rotation: 720, duration: 0.8 });
 
 const Destinations = gsap.timeline({
-  delay: 1,
+  delay: 0.8,
   scrollTrigger: "Destinations-Head",
 });
 Destinations.from(".Destinations-Head", {
   opacity: 0,
-  duration: 0.6,
-  ease: "ease-out",
+  rotation: 90,
+  duration: 1.5,
 });
+Destinations.from("");
