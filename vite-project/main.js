@@ -1,6 +1,15 @@
 import "./style.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+const DOMSelectors = {
+  Destinations: document.querySelector(".Destinations"),
+};
+const Destinations = [
+  {
+    name: "Col",
+  },
+];
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = gsap.timeline({ delay: 0.1 });
@@ -28,3 +37,19 @@ Destinations.from(".Destinations-Image", {
   clipPath: "Polygon( 0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   opacity: 0,
 });
+
+function DisplayDestinations() {
+  const hi = {};
+  hi.name = hi.name;
+  hi.image = hi.img;
+  food.forEach((hi) =>
+    DOMSelectors.box.insertAdjacentHTML(
+      "afterbegin",
+      `<div class = "Destinations-Card">
+  <img class="Destinations-Image" src="${hi.img}">
+  <h2 class ="Destinations-Card-Title"> ${hi.name} </h2> 
+  </div>`
+    )
+  );
+}
+DisplayDestinations();

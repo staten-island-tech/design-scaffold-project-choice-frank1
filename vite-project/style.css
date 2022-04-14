@@ -26,15 +26,14 @@ body,
 }
 
 #Home-Header {
-  background-color: #333;
+  background-color: var(--gray);
   overflow: hidden;
   font-size: 10rem;
-  position: fixed;
 }
 
 #Home-Header a {
   float: left;
-  color: #f2f2f2;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,8 +41,8 @@ body,
 }
 
 #Home-Header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 .Destinations-Head {
   margin-bottom: 5rem;
@@ -61,6 +60,7 @@ body,
   height: 5rem;
 }
 :root {
+  --white: #ffff;
   --black: #000;
   --light-blue: #2998ff;
   --dark-blue: #135cc5;
