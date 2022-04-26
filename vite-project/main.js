@@ -3,13 +3,37 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const DOMSelectors = {
-  Destinations: document.querySelector(".Destinations"),
+  Dest: document.querySelector(".Destinations"),
 };
-const Destinations = [
+
+const Dest = [
   {
-    name: "Col",
+    name: "Colosseum",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMspD7Duc-yuSto9h4Rb_Pum6YUbyiPCvFKQ&usqp=CAU",
+  },
+  {
+    name: "Leaning Tower Of Pisa",
+    img: "https://www.nuestro.cl/wp-content/uploads/2021/10/Tower-of-Pisa.jpg",
+  },
+  {
+    name: "Sample",
+    img: "https://www.nuestro.cl/wp-content/uploads/2021/10/Tower-of-Pisa.jpg",
   },
 ];
+
+function DisplayDestinations() {
+  Dest.forEach((Dest) =>
+    DOMSelectors.Dest.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="Destinations-Card">
+      <img id="Destinations-Image" src="${Dest.img}">
+      <h3 class="Destinations-Card-Title">${Dest.name}</h3>
+   </div>`
+    )
+  );
+}
+DisplayDestinations();
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = gsap.timeline({ delay: 0.1 });
@@ -37,19 +61,3 @@ Destinations.from(".Destinations-Image", {
   clipPath: "Polygon( 0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   opacity: 0,
 });
-
-function DisplayDestinations() {
-  const hi = {};
-  hi.name = hi.name;
-  hi.image = hi.img;
-  food.forEach((hi) =>
-    DOMSelectors.box.insertAdjacentHTML(
-      "afterbegin",
-      `<div class = "Destinations-Card">
-  <img class="Destinations-Image" src="${hi.img}">
-  <h2 class ="Destinations-Card-Title"> ${hi.name} </h2> 
-  </div>`
-    )
-  );
-}
-DisplayDestinations();
