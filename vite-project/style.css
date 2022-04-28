@@ -20,18 +20,12 @@ body,
   background-size: 100%;
 }
 
-.Home-Title {
-  text-align: center;
-  color: var(--dark-red);
-}
-
-#Home-Header {
+#Nav-Header {
   background-color: var(--gray);
   overflow: hidden;
   font-size: 10rem;
 }
-
-#Home-Header a {
+#Nav-Header a {
   float: left;
   color: var(--white);
   text-align: center;
@@ -39,12 +33,14 @@ body,
   text-decoration: none;
   font-size: 17px;
 }
-
-#Home-Header a:hover {
+#Nav-Header a:hover {
   background-color: var(--white);
   color: var(--black);
 }
-
+.Home-Title {
+  text-align: center;
+  color: var(--dark-red);
+}
 .Destinations-Head {
   margin-bottom: 5rem;
   margin-left: 2rem;
@@ -54,20 +50,65 @@ body,
   flex-wrap: wrap;
   font-size: 30%;
   justify-content: space-around;
-  background-color: rgb(0, 218, 218);
+  background-color: var(--white);
 }
 .Destinations-Card {
   text-align: center;
   border: 4px solid;
   width: 26%;
-  margin: 5rem;
+  height: 25rem;
   background-color: var(--black);
   color: var(--white);
+  margin-bottom: 10rem;
 }
 #Destinations-Image {
   width: 100%;
-  height: 40%;
+  height: 65%;
 }
+.Destinations-Card-Title {
+  height: 10%;
+}
+.Destinations-Desc {
+  font-size: var(--p);
+  height: 25%;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.Destinations-Head {
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+.Food {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+  justify-content: space-around;
+  background-color: var(--white);
+}
+.Food-Card {
+  text-align: center;
+  border: 4px solid;
+  width: 26%;
+  height: 25rem;
+  background-color: var(--black);
+  color: var(--white);
+  margin-bottom: 10rem;
+}
+#Food-Image {
+  width: 100%;
+  height: 65%;
+}
+.Food-Card-Title {
+  height: 10%;
+}
+.Food-Desc {
+  font-size: var(--p);
+  height: 25%;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
 :root {
   --white: #ffff;
   --black: #000;
@@ -87,6 +128,7 @@ body,
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
+  --p: 1rem;
 }
 
 h1 {
