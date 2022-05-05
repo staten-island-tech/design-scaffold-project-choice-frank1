@@ -75,26 +75,30 @@ body,
   margin-left: 1.5rem;
 }
 
-.Destinations-Head {
-  margin-bottom: 5rem;
-  margin-left: 2rem;
+.Food-Head {
+  background-image: url(https://media.istockphoto.com/photos/overhead-view-of-light-brown-wooden-table-picture-id491606503?b=1&k=20&m=491606503&s=170667a&w=0&h=y3BY8L71VMvYmLijZO1REdjE3-sQi-AMYRErIomf5-Q=);
 }
 .Food {
   display: flex;
   flex-wrap: wrap;
   font-size: 30%;
   justify-content: space-around;
-  background-color: var(--white);
+  background-image: url(https://media.istockphoto.com/photos/overhead-view-of-light-brown-wooden-table-picture-id491606503?b=1&k=20&m=491606503&s=170667a&w=0&h=y3BY8L71VMvYmLijZO1REdjE3-sQi-AMYRErIomf5-Q=);
 }
 .Food-Card {
   text-align: center;
-  border: 4px solid;
   width: 26%;
   height: 25rem;
+  background-color: transparent;
+  color: transparent;
+  margin-bottom: 10rem;
+  transition: 1s;
+}
+.Food-Card:hover {
   background-color: var(--black);
   color: var(--white);
-  margin-bottom: 10rem;
 }
+
 #Food-Image {
   width: 100%;
   height: 65%;
