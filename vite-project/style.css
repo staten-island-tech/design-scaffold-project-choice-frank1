@@ -23,7 +23,7 @@ body,
 #Nav-Header {
   background-color: var(--gray);
   overflow: hidden;
-  font-size: 10rem;
+  font-size: var(--h2);
 }
 #Nav-Header a {
   float: left;
@@ -31,7 +31,7 @@ body,
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: var(--h5);
 }
 #Nav-Header a:hover {
   background-color: var(--white);
@@ -51,15 +51,16 @@ body,
   font-size: 30%;
   justify-content: space-around;
   background-color: var(--white);
+  height: 74.1rem;
 }
 .Destinations-Card {
   text-align: center;
   border: 4px solid;
   width: 26%;
-  height: 25rem;
   background-color: var(--black);
   color: var(--white);
   margin-bottom: 10rem;
+  height: 50%;
 }
 #Destinations-Image {
   width: 100%;
@@ -88,12 +89,13 @@ body,
 .Food-Card {
   text-align: center;
   width: 26%;
-  height: 25rem;
+  height: 40%;
   background-color: transparent;
   color: transparent;
   margin-bottom: 10rem;
   transition: 1s;
 }
+
 .Food-Card:hover {
   background-color: var(--black);
   color: var(--white);
@@ -127,12 +129,12 @@ body,
   --secondary: var(--dark-blue);
 
   /*Typography */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
-  --p: 1rem;
+  --h1: 15rem;
+  --h2: 10rem;
+  --h3: 6rem;
+  --h4: 4rem;
+  --h5: 3rem;
+  --p: 2rem;
 }
 
 h1 {
