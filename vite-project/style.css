@@ -115,6 +115,44 @@ body,
   margin-left: 1.5rem;
 }
 
+.Landscape-Head {
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+.Landscape {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30%;
+  justify-content: space-around;
+}
+.Landscape-Card {
+  text-align: center;
+  width: 26%;
+  height: 40%;
+  background-color: transparent;
+  color: transparent;
+  margin-bottom: 10rem;
+  transition: 1s;
+}
+
+.Landscape-Card:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#Landscape-Image {
+  width: 100%;
+  height: 65%;
+}
+.Landscape-Card-Title {
+  height: 10%;
+}
+.Landscape-Desc {
+  font-size: var(--p);
+  height: 25%;
+  text-align: left;
+  margin-left: 1.5rem;
+}
 :root {
   --white: #ffff;
   --black: #000;
@@ -123,12 +161,6 @@ body,
   --light-red: #f87171;
   --dark-red: #dc2626;
   --gray: #252c30;
-
-  /*Intentions */
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
-
-  /*Typography */
   --h1: 15rem;
   --h2: 10rem;
   --h3: 6rem;

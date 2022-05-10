@@ -6,6 +6,7 @@ const DOMSelectors = {
   Destinations: document.querySelector(".Destinations"),
   Foods: document.querySelector(".Food"),
   FoodCard: document.querySelector(".Food-Card"),
+  Landscapes: document.querySelector(".Landscape"),
 };
 
 const Destination = [
@@ -24,7 +25,7 @@ const Destination = [
   {
     name: "Colosseum",
     img: "https://media.nationalgeographic.org/assets/photos/198/897/95a24eaa-5e33-4778-b06c-96654f3dbf87.jpg",
-    desc: "The colosseum is",
+    desc: "The colosseum is a big circle",
     alt: "The colosseum under the clouds",
   },
 ];
@@ -93,6 +94,40 @@ function DisplayFoods() {
   );
 }
 DisplayFoods();
+
+const Landscape = [
+  {
+    name: "Lake Garda",
+    img: "https://media.istockphoto.com/photos/turquoise-lake-garda-and-sailboats-from-above-at-sunset-malcesine-picture-id1221529154?b=1&k=20&m=1221529154&s=170667a&w=0&h=kK1HZR_kc0qbpqMQ0dEbC4V9zhQBWByqfB9ESw7R3Wc=",
+    desc: "Lake Garda is the biggest lake in Italy and is known for its crystal clear water",
+    alt: "The leaning tower of pisa in the sunlight",
+  },
+  {
+    name: "Mount Etna",
+    img: "https://factpros.com/wp-content/uploads/2020/02/Tourists-are-hiking-towards-Etna-volcano-scaled.jpeg",
+    desc: "Mount Etna is the tallest active volcano in Europe. ",
+    alt: "People hiking Mount Etna",
+  },
+  {
+    name: "Colosseum",
+    img: "https://media.nationalgeographic.org/assets/photos/198/897/95a24eaa-5e33-4778-b06c-96654f3dbf87.jpg",
+    desc: "The colosseum is a big circle",
+    alt: "The colosseum under the clouds",
+  },
+];
+function DisplayLandscapes() {
+  Landscape.forEach((Landscape) =>
+    DOMSelectors.Landscapes.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="Landscape-Card">
+      <img alt="${Landscape.alt}" id="Landscape-Image" src="${Landscape.img}">
+      <h5 class="Landscape-Card-Title">${Landscape.name}</h5>
+      <p class="Landscape-Desc">${Landscape.desc}</p>
+   </div>`
+    )
+  );
+}
+DisplayLandscapes();
 
 gsap.registerPlugin(ScrollTrigger);
 
