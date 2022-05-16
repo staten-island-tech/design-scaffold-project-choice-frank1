@@ -20,16 +20,15 @@ body,
   background-size: 100%;
 }
 
-#Nav-Header {
-  background-color: var(--gray);
+.NavBar {
+  background-color: var(--darkgray);
   overflow: hidden;
-  font-size: var(--h2);
 }
-#Nav-Header a {
+.Nav {
   float: left;
-  color: var(--white);
+  color: var(--lightgray);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   font-size: var(--h5);
 }
@@ -39,7 +38,7 @@ body,
 }
 .Home-Title {
   text-align: center;
-  color: var(--dark-red);
+  color: rgb(218, 49, 49);
 }
 .Destinations-Head {
   margin-bottom: 5rem;
@@ -51,18 +50,18 @@ body,
   font-size: 30%;
   justify-content: space-around;
   background-color: var(--white);
-  height: 74.1rem;
+  height: 75rem;
 }
 .Destinations-Card {
   text-align: center;
   border: 4px solid;
-  width: 26%;
+  width: 25.001%;
   background-color: var(--black);
   color: var(--white);
   margin-bottom: 10rem;
-  height: 50%;
+  height: 65%;
 }
-#Destinations-Image {
+.Destinations-Image {
   width: 100%;
   height: 65%;
 }
@@ -79,40 +78,44 @@ body,
 .Food-Head {
   background-image: url(https://media.istockphoto.com/photos/overhead-view-of-light-brown-wooden-table-picture-id491606503?b=1&k=20&m=491606503&s=170667a&w=0&h=y3BY8L71VMvYmLijZO1REdjE3-sQi-AMYRErIomf5-Q=);
 }
+
 .Food {
   display: flex;
   flex-wrap: wrap;
   font-size: 30%;
   justify-content: space-around;
   background-image: url(https://media.istockphoto.com/photos/overhead-view-of-light-brown-wooden-table-picture-id491606503?b=1&k=20&m=491606503&s=170667a&w=0&h=y3BY8L71VMvYmLijZO1REdjE3-sQi-AMYRErIomf5-Q=);
+  height: 120rem;
 }
 .Food-Card {
   text-align: center;
-  width: 26%;
+  width: 25.001%;
   height: 40%;
+  margin-top: 2rem;
   background-color: transparent;
   color: transparent;
-  margin-bottom: 10rem;
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .Food-Card:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 20%;
 }
 
-#Food-Image {
+.Food-Image {
   width: 100%;
   height: 65%;
+  border-radius: 20%;
 }
 .Food-Card-Title {
   height: 10%;
 }
 .Food-Desc {
   font-size: var(--p);
-  height: 25%;
   text-align: left;
   margin-left: 1.5rem;
+  height: 25%;
 }
 
 .Landscape-Head {
@@ -124,23 +127,19 @@ body,
   flex-wrap: wrap;
   font-size: 30%;
   justify-content: space-around;
+  height: 75rem;
 }
 .Landscape-Card {
   text-align: center;
-  width: 26%;
-  height: 40%;
-  background-color: transparent;
-  color: transparent;
+  width: 25.001%;
+  height: 65%;
+  background-color: var(--darkgray);
+  color: var(--lightgray);
   margin-bottom: 10rem;
   transition: 1s;
 }
 
-.Landscape-Card:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-#Landscape-Image {
+.Landscape-Image {
   width: 100%;
   height: 65%;
 }
@@ -151,22 +150,19 @@ body,
   font-size: var(--p);
   height: 25%;
   text-align: left;
-  margin-left: 1.5rem;
+  padding: 1rem;
 }
 :root {
   --white: #ffff;
   --black: #000;
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-  --gray: #252c30;
+  --darkgray: rgb(63, 63, 63);
+  --lightgray: rgb(214, 214, 214);
   --h1: 15rem;
   --h2: 10rem;
   --h3: 6rem;
   --h4: 4rem;
   --h5: 3rem;
-  --p: 2rem;
+  --p: 1.5rem;
 }
 
 h1 {
