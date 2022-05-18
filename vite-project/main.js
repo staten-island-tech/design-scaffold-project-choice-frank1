@@ -7,6 +7,7 @@ const DOMSelectors = {
   Foods: document.querySelector(".Food"),
   FoodCard: document.querySelector(".Food-Card"),
   Landscapes: document.querySelector(".Landscape"),
+  LandscapeCard: document.querySelector(".Landscape-Card"),
 };
 
 const Destination = [
@@ -107,25 +108,28 @@ const Landscape = [
     img: "https://media.istockphoto.com/photos/turquoise-lake-garda-and-sailboats-from-above-at-sunset-malcesine-picture-id1221529154?b=1&k=20&m=1221529154&s=170667a&w=0&h=kK1HZR_kc0qbpqMQ0dEbC4V9zhQBWByqfB9ESw7R3Wc=",
     desc: "Lake Garda is the biggest lake in Italy and is known for its crystal clear water",
     alt: "Clear blue ocean with buildings to the right",
+    id: "Landscape1",
   },
   {
     name: "Mount Etna",
     img: "https://factpros.com/wp-content/uploads/2020/02/Tourists-are-hiking-towards-Etna-volcano-scaled.jpeg",
     desc: "Mount Etna is the tallest active volcano in Europe. ",
     alt: "People hiking towards Mount Etna",
+    id: "Landscape2",
   },
   {
     name: "Grotta della Poesia",
     img: "https://ak-d.tripcdn.com/images/1A0w170000012kb8o33A9.jpg?proc=source%2Ftrip",
     desc: "The Grotta della Poesia is a natural pool surrounded by rugged limestone cliffs, with caves & a tunnel to the open sea.",
     alt: "The Grotta della Poesia under the clouds",
+    id: "Landscape3",
   },
 ];
 function DisplayLandscapes() {
   Landscape.forEach((Landscape) =>
     DOMSelectors.Landscapes.insertAdjacentHTML(
       "afterbegin",
-      `<div class="Landscape-Card">
+      `<div class="Landscape-Card" id="${Landscape.id}">
       <img alt="${Landscape.alt}" class="Landscape-Image" src="${Landscape.img}">
       <h5 class="Landscape-Card-Title">${Landscape.name}</h5>
       <p class="Landscape-Desc">${Landscape.desc}</p>
@@ -182,4 +186,17 @@ const LandscapeAnimation = gsap.timeline({
   delay: 1.5,
   scrollTrigger: ".Landscape-Head",
 });
-LandscapeAnimation.from(".Landscape-Head", {});
+
+LandscapeAnimation.from(".Landscape-Head", { opacity: 0, duration: 0.4 });
+LandscapeAnimation.to("#Landscape3", {
+  clipPath: "circle(80%)",
+  duration: 0.4,
+});
+LandscapeAnimation.to("#Landscape2", {
+  clipPath: "circle(80%)",
+  duration: 0.4,
+});
+LandscapeAnimation.to("#Landscape1", {
+  clipPath: "circle(80%)",
+  duration: 0.4,
+});
