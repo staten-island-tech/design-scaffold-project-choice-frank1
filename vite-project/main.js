@@ -26,7 +26,7 @@ const Destination = [
   {
     name: "Colosseum",
     img: "https://media.nationalgeographic.org/assets/photos/198/897/95a24eaa-5e33-4778-b06c-96654f3dbf87.jpg",
-    desc: "The colosseum is a big circle",
+    desc: "The colosseum was a large amphitheater that hosted events like gladiatorial games. Now it is a tourist spot for people visiting Rome.",
     alt: "The colosseum under the clouds",
   },
 ];
@@ -147,9 +147,24 @@ Home.from(".Home", {
   duration: 0.6,
   ease: "ease-out",
 });
-Home.from("#home1", { opacity: 0, rotation: 180, duration: 0.8 });
-Home.from("#home2", { opacity: 0, rotation: 180, duration: 0.8 });
-Home.from("#home3", { opacity: 0, rotation: 180, duration: 0.8 });
+Home.from("#home1", {
+  color: "rgb(25, 0, 0)",
+  opacity: 0,
+  rotation: 180,
+  duration: 0.8,
+});
+Home.from("#home2", {
+  color: "rgb(25, 25, 25)",
+  opacity: 0,
+  rotation: -180,
+  duration: 0.8,
+});
+Home.from("#home3", {
+  color: "rgb(0, 25, 0)",
+  opacity: 0,
+  rotation: 180,
+  duration: 0.8,
+});
 
 const DestinationAnimation = gsap.timeline({
   delay: 1.5,
@@ -190,13 +205,16 @@ const LandscapeAnimation = gsap.timeline({
 LandscapeAnimation.from(".Landscape-Head", { opacity: 0, duration: 0.4 });
 LandscapeAnimation.to("#Landscape3", {
   clipPath: "circle(80%)",
+  opacity: 100,
   duration: 0.4,
 });
 LandscapeAnimation.to("#Landscape2", {
   clipPath: "circle(80%)",
+  opacity: 100,
   duration: 0.4,
 });
 LandscapeAnimation.to("#Landscape1", {
   clipPath: "circle(80%)",
+  opacity: 100,
   duration: 0.4,
 });
