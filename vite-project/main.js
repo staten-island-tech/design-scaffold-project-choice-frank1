@@ -3,11 +3,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const DOMSelectors = {
+  Home: document.querySelector(".Home"),
   Destinations: document.querySelector(".Destinations"),
   Foods: document.querySelector(".Food"),
   FoodCard: document.querySelector(".Food-Card"),
   Landscapes: document.querySelector(".Landscape"),
   LandscapeCard: document.querySelector(".Landscape-Card"),
+  ThemeButton: document.querySelector("#Themebtn"),
 };
 
 const Destination = [
@@ -138,6 +140,16 @@ function DisplayLandscapes() {
   );
 }
 DisplayLandscapes();
+
+DOMSelectors.ThemeButton.addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
+});
 
 gsap.registerPlugin(ScrollTrigger);
 
