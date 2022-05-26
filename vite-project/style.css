@@ -58,6 +58,7 @@ body,
   overflow: hidden;
 }
 .footerButton {
+  font-size: var(--h5);
   text-align: center;
 }
 .footerButton:hover {
