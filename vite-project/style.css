@@ -84,7 +84,7 @@ body,
 .Destinations-Card {
   text-align: center;
   width: 26%;
-  background-color: var(--darkgray);
+  background-color: var(--lightgray);
   margin-bottom: 10rem;
   height: 65%;
 }
