@@ -84,8 +84,7 @@ body,
 .Destinations-Card {
   text-align: center;
   width: 26%;
-  background-color: var(--darkgray);
-  color: var(--gray);
+  background-color: var(--gray);
   margin-bottom: 10rem;
   height: 65%;
 }
@@ -130,8 +129,8 @@ body,
 }
 
 .Food-Card:hover {
-  background-color: var(--gray);
-  color: ;
+  background-color: var(--darkgray);
+  color:var(--lightgray) ;
   border-radius: 20%;
 }
 
@@ -203,7 +202,7 @@ body,
   --black: #000;
   --darkgray: rgb(31, 31, 31);
   --lightgray: rgb(240, 240, 240);
-  --gray: rgb(100, 100, 100)
+  --gray: grey
   --h1: 15rem;
   --h2: 10rem;
   --h3: 6rem;
