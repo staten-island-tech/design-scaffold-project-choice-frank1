@@ -56,7 +56,13 @@ body,
 .footer {
   background-color: var(--blue);
   overflow: hidden;
+}
+.footerButton {
   text-align: center;
+}
+.footerButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.3);
 }
 .Home-Title {
   text-align: center;
