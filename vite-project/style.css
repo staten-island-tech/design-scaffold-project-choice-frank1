@@ -35,8 +35,8 @@ body,
 }
 .NavButton {
   float: left;
-  color: var(--darkgray);
-  background-color: var(--lightgray);
+  color: var(--lightgray);
+  background-color: var(--darkgray);
   text-align: center;
   padding: 0 0.75rem;
   font-size: var(--h5);
@@ -84,7 +84,7 @@ body,
 .Destinations-Card {
   text-align: center;
   width: 26%;
-  background-color: var(--gray);
+  background-color: var(--darkgray);
   margin-bottom: 10rem;
   height: 65%;
 }
