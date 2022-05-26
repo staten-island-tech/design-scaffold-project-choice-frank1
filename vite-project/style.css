@@ -56,10 +56,10 @@ body,
 .footer {
   background-color: var(--blue);
   overflow: hidden;
+  text-align: center;
 }
 .footerButton {
   font-size: var(--h5);
-  text-align: center;
 }
 .footerButton:hover {
   transform: translateY(-2px);
