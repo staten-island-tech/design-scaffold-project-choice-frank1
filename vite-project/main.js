@@ -146,11 +146,9 @@ DOMSelectors.ThemeButton.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
-    DOMSelectors.DestinationCard.style.backgroundColor = "var(--lightgray)";
   } else {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
-    DOMSelectors.DestinationCard.style.backgroundColor = "var(--darkgray)";
   }
 });
 
