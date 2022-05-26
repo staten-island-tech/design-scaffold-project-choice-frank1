@@ -129,8 +129,8 @@ body,
 }
 
 .Food-Card:hover {
-  background-color: var(--darkgray);
-  color: var(--lightgray);
+  background-color: var(--lightgray);
+  color: var(--darkgray);
   border-radius: 20%;
 }
 
