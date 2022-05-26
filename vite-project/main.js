@@ -22,7 +22,7 @@ const Destination = [
   {
     name: "Pantheon",
     img: "https://www.planetware.com/photos-large/I/italy-rome-pantheon-exterior-view.jpg",
-    desc: "The Pantheon is",
+    desc: "The Pantheon is one of the best-preserved monuments of ancient Rome. The structure, completed around 126-128 A.D. during the reign of Emperor Hadrian, features a rotunda with a massive domed ceiling that was the largest of its kind when it was built.",
     alt: "The front of the Pantheon",
   },
   {
@@ -71,7 +71,7 @@ const Food = [
   {
     name: "Lasagne",
     img: "https://img.taste.com.au/N5uOwvqw/taste/2021/03/sweet-potato-and-lentil-lasagne-170423-2.jpg",
-    desc: "Lasagne is really good",
+    desc: "Lasagne is an Italian dish made of stacked layers of lasagne alternating with fillings such as ragù (ground meats and tomato sauce), vegetables, cheeses (which may include ricotta, mozzarella, and parmesan), and seasonings and spices, like Italian seasoning, such as garlic, oregano and basil.",
     alt: "A cube of Lasgne",
     id: "Food4",
   },
