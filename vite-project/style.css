@@ -54,7 +54,7 @@ body,
 }
 
 .footer {
-  background-color: var(--darkgray);
+  background-color: var(--blue);
   overflow: hidden;
   text-align: center;
 }
@@ -203,7 +203,7 @@ body,
   --black: #000;
   --darkgray: rgb(31, 31, 31);
   --lightgray: rgb(240, 240, 240);
-  --blue: #1439db;
+  --blue: #2c44b1;
   --h1: 15rem;
   --h2: 10rem;
   --h3: 6rem;
