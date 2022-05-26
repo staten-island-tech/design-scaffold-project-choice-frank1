@@ -22,7 +22,7 @@ const Destination = [
   {
     name: "Pantheon",
     img: "https://www.planetware.com/photos-large/I/italy-rome-pantheon-exterior-view.jpg",
-    desc: "The Pantheon is one of the best-preserved monuments of ancient Rome. The structure, completed around 126-128 A.D. during the reign of Emperor Hadrian, features a rotunda with a massive domed ceiling that was the largest of its kind when it was built.",
+    desc: "The Pantheon is one of the best-preserved monuments of ancient Rome. The structure, features a rotunda with a massive domed ceiling that was the largest of its kind when it was built.",
     alt: "The front of the Pantheon",
   },
   {
