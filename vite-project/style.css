@@ -11,12 +11,10 @@ body,
 .light {
   color: var(--lightgray);
   background-color: var(--darkgray);
-  border-color: var(--lightgray);
 }
 .dark {
   color: var(--darkgray);
   background-color: var(--lightgray);
-  border-color: var(--darkgray);
 }
 
 .Home {
@@ -37,8 +35,8 @@ body,
 }
 .NavButton {
   float: left;
-  color: var(--lightgray);
-  background-color: var(--darkgray);
+  color: var(--darkgray);
+  background-color: var(--lightgray);
   text-align: center;
   padding: 0 0.75rem;
   font-size: var(--h5);
